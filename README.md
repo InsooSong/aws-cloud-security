@@ -4,8 +4,6 @@
 
 This repository documents my AWS learning journey with a focus on cloud security architecture, identity and access management, networking, encryption, logging, monitoring, threat detection, and security automation.
 
-> Overall Study Plan Start Point: Day 36
-
 ---
 
 # Learning Objectives
@@ -94,8 +92,6 @@ This repository documents my AWS learning journey with a focus on cloud security
 
 # Day 1 — AWS Fundamentals & Cloud Security Overview
 
-> Overall Study Plan: Day 36
-
 ## Topic
 
 AWS Fundamentals, Global Infrastructure, and Shared Responsibility Model
@@ -148,7 +144,7 @@ Each AWS Region contains multiple Availability Zones.
 
 An Availability Zone is one or more physically separated data centers within a Region.
 
-Example:
+The basic infrastructure hierarchy can be understood as:
 
 ```text
 AWS
@@ -157,14 +153,14 @@ AWS
         └── Data Center
 ```
 
-Using multiple Availability Zones improves:
+Using multiple Availability Zones can improve:
 
 - High availability
 - Fault tolerance
 - Resilience
 - Disaster recovery capability
 
-Availability Zones are designed to be isolated from failures in other Availability Zones while still being connected through high-speed networking.
+Availability Zones are designed to be isolated from failures in other Availability Zones while being connected through high-bandwidth, low-latency networking.
 
 ---
 
@@ -196,7 +192,7 @@ Examples include:
 
 ### Customer Responsibilities
 
-Customers are responsible for securely configuring and operating their resources in AWS.
+Customers are responsible for securely configuring and operating their AWS resources.
 
 Examples include:
 
@@ -241,7 +237,7 @@ With Amazon EC2, customers are responsible for areas such as:
 - Network configuration
 - Data protection
 
-With managed services, AWS manages more of the infrastructure, but customers are still responsible for access control, data protection, and secure configuration.
+With managed services, AWS manages more of the underlying infrastructure, but customers are still responsible for secure access control, data protection, and service configuration.
 
 ---
 
@@ -312,7 +308,7 @@ AWS Config
 | AWS IAM | Controls identities and permissions |
 | AWS KMS | Manages encryption keys |
 | AWS Secrets Manager | Manages credentials and secrets |
-| AWS CloudTrail | Records AWS API activities |
+| AWS CloudTrail | Records AWS API activity |
 | Amazon CloudWatch | Monitors metrics, logs, and system activity |
 | AWS Config | Tracks AWS resource configurations |
 | Amazon GuardDuty | Detects suspicious and malicious activity |
@@ -426,9 +422,9 @@ How is the data protected?
 Related AWS services:
 
 ```text
-KMS
+AWS KMS
 Encryption
-Secrets Manager
+AWS Secrets Manager
 ```
 
 ### Logging
@@ -442,8 +438,8 @@ Who performed an action and what happened?
 Related AWS services:
 
 ```text
-CloudTrail
-CloudWatch
+AWS CloudTrail
+Amazon CloudWatch
 AWS Config
 ```
 
@@ -458,10 +454,10 @@ Is suspicious activity occurring?
 Related AWS services:
 
 ```text
-GuardDuty
-Security Hub
-Inspector
-Macie
+Amazon GuardDuty
+AWS Security Hub
+Amazon Inspector
+Amazon Macie
 ```
 
 ---
@@ -486,11 +482,11 @@ Amazon EC2
 │   └── AWS KMS
 │
 ├── Logging
-│   ├── CloudTrail
-│   └── CloudWatch
+│   ├── AWS CloudTrail
+│   └── Amazon CloudWatch
 │
 └── Detection
-    └── GuardDuty
+    └── Amazon GuardDuty
 ```
 
 Questions to consider:
@@ -501,7 +497,7 @@ Questions to consider:
 - Who changed the EC2 configuration?
 - Are there any suspicious activities related to the instance?
 
-Thinking about AWS resources from these perspectives helps build a security-focused mindset rather than simply memorizing AWS services.
+Thinking about AWS resources from these perspectives helps build a security-focused mindset rather than simply memorizing individual AWS services.
 
 ---
 
@@ -518,7 +514,7 @@ For today's practice, I explored the AWS Management Console and located the foll
 - KMS
 - GuardDuty
 
-I focused on understanding the purpose of each service rather than creating resources.
+The goal was to become familiar with where major AWS and security services are located and understand their basic roles.
 
 ### IAM
 
@@ -526,19 +522,19 @@ Controls identities, authentication, and permissions.
 
 ### KMS
 
-Manages encryption keys used to protect AWS data.
+Manages encryption keys used to protect data in AWS.
 
 ### CloudTrail
 
-Records API calls and activities performed in an AWS account.
+Records API calls and account activity for auditing and investigation.
 
 ### CloudWatch
 
-Collects metrics, logs, and monitoring information.
+Collects metrics, logs, and monitoring information from AWS resources and applications.
 
 ### GuardDuty
 
-Analyzes AWS activity to detect suspicious or malicious behavior.
+Analyzes AWS data sources to identify potentially malicious or suspicious activity.
 
 ---
 
@@ -549,16 +545,17 @@ Analyzes AWS activity to detect suspicious or malicious behavior.
 - AWS and customers share security responsibilities.
 - AWS is responsible for security **of** the cloud.
 - Customers are responsible for security **in** the cloud.
-- Customer responsibility depends on the type of AWS service.
-- AWS accounts provide important security boundaries.
+- Customer responsibility depends on the AWS service being used.
+- AWS accounts provide important security and resource boundaries.
 - Cloud security can be analyzed through identity, network, data, logging, and detection.
-- Secure cloud architecture requires proper configuration rather than simply using cloud services.
+- Using cloud services does not automatically make a workload secure.
+- Secure AWS environments require proper configuration, access control, monitoring, and data protection.
 
 ---
 
 ## Reflection
 
-Before studying AWS security services individually, I need to understand how AWS infrastructure and security responsibilities are divided.
+Before studying individual AWS security services, I need to understand how AWS infrastructure and security responsibilities are divided.
 
 One important lesson from the Shared Responsibility Model is that using AWS does not automatically make an application secure.
 
@@ -574,7 +571,7 @@ Logging
 Detection
 ```
 
-I will use these perspectives when studying individual AWS services and architectures.
+I will use these perspectives when studying individual AWS services and cloud architectures.
 
 ---
 
