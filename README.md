@@ -4,6 +4,8 @@
 
 This repository documents my AWS learning journey with a focus on cloud security architecture, identity and access management, networking, encryption, logging, monitoring, threat detection, and security automation.
 
+> Overall Study Plan Start Point: Day 36
+
 ---
 
 # Learning Objectives
@@ -14,8 +16,9 @@ This repository documents my AWS learning journey with a focus on cloud security
 - Understand data protection and encryption
 - Implement logging and monitoring
 - Learn cloud threat detection techniques
-- Understand AWS security services
+- Understand major AWS security services
 - Practice cloud security automation
+- Build a practical foundation for cloud security engineering
 
 ---
 
@@ -23,73 +26,75 @@ This repository documents my AWS learning journey with a focus on cloud security
 
 ## Phase 1 — AWS Fundamentals & IAM
 
-- [x] Day 36 — AWS Fundamentals & Shared Responsibility Model
-- [ ] Day 37 — AWS IAM Fundamentals
-- [ ] Day 38 — IAM Users, Groups, Roles & Policies
-- [ ] Day 39 — IAM Policy Evaluation
-- [ ] Day 40 — IAM Security Best Practices
+- [x] Day 1 — AWS Fundamentals & Shared Responsibility Model
+- [ ] Day 2 — AWS IAM Fundamentals
+- [ ] Day 3 — IAM Users, Groups, Roles & Policies
+- [ ] Day 4 — IAM Policy Evaluation
+- [ ] Day 5 — IAM Security Best Practices
 
 ## Phase 2 — AWS Networking
 
-- [ ] Day 41 — VPC Fundamentals
-- [ ] Day 42 — Public & Private Subnets
-- [ ] Day 43 — Route Tables & Internet Gateway
-- [ ] Day 44 — NAT Gateway
-- [ ] Day 45 — Security Groups
-- [ ] Day 46 — Network ACLs
-- [ ] Day 47 — VPC Security Review
+- [ ] Day 6 — VPC Fundamentals
+- [ ] Day 7 — Public & Private Subnets
+- [ ] Day 8 — Route Tables & Internet Gateway
+- [ ] Day 9 — NAT Gateway
+- [ ] Day 10 — Security Groups
+- [ ] Day 11 — Network ACLs
+- [ ] Day 12 — VPC Security Review
 
 ## Phase 3 — Compute & Storage Security
 
-- [ ] Day 48 — EC2 Fundamentals & Security
-- [ ] Day 49 — EC2 Security Hardening
-- [ ] Day 50 — S3 Fundamentals
-- [ ] Day 51 — S3 Access Control & Security
-- [ ] Day 52 — EBS Encryption
-- [ ] Day 53 — RDS Security
-- [ ] Day 54 — Compute & Storage Security Review
+- [ ] Day 13 — EC2 Fundamentals & Security
+- [ ] Day 14 — EC2 Security Hardening
+- [ ] Day 15 — S3 Fundamentals
+- [ ] Day 16 — S3 Access Control & Security
+- [ ] Day 17 — EBS Encryption
+- [ ] Day 18 — RDS Security
+- [ ] Day 19 — Compute & Storage Security Review
 
 ## Phase 4 — Logging & Monitoring
 
-- [ ] Day 55 — AWS CloudTrail
-- [ ] Day 56 — Amazon CloudWatch
-- [ ] Day 57 — AWS Config
-- [ ] Day 58 — Centralized Logging
-- [ ] Day 59 — Logging & Monitoring Review
+- [ ] Day 20 — AWS CloudTrail
+- [ ] Day 21 — Amazon CloudWatch
+- [ ] Day 22 — AWS Config
+- [ ] Day 23 — Centralized Logging
+- [ ] Day 24 — Logging & Monitoring Review
 
 ## Phase 5 — Data Protection & Threat Detection
 
-- [ ] Day 60 — AWS KMS Fundamentals
-- [ ] Day 61 — KMS Keys & Encryption
-- [ ] Day 62 — AWS Secrets Manager
-- [ ] Day 63 — Amazon GuardDuty
-- [ ] Day 64 — AWS Security Hub
-- [ ] Day 65 — Amazon Inspector
-- [ ] Day 66 — Amazon Macie
-- [ ] Day 67 — AWS WAF & Shield
-- [ ] Day 68 — Security Services Review
+- [ ] Day 25 — AWS KMS Fundamentals
+- [ ] Day 26 — KMS Keys & Encryption
+- [ ] Day 27 — AWS Secrets Manager
+- [ ] Day 28 — Amazon GuardDuty
+- [ ] Day 29 — AWS Security Hub
+- [ ] Day 30 — Amazon Inspector
+- [ ] Day 31 — Amazon Macie
+- [ ] Day 32 — AWS WAF & Shield
+- [ ] Day 33 — Security Services Review
 
 ## Phase 6 — AWS Security Architecture
 
-- [ ] Day 69 — AWS Organizations
-- [ ] Day 70 — Service Control Policies
-- [ ] Day 71 — Multi-Account Security Architecture
-- [ ] Day 72 — Centralized Security & Logging
-- [ ] Day 73 — AWS Security Architecture Review
+- [ ] Day 34 — AWS Organizations
+- [ ] Day 35 — Service Control Policies
+- [ ] Day 36 — Multi-Account Security Architecture
+- [ ] Day 37 — Centralized Security & Logging
+- [ ] Day 38 — AWS Security Architecture Review
 
 ## Phase 7 — Security Automation
 
-- [ ] Day 74 — AWS CLI Fundamentals
-- [ ] Day 75 — AWS CLI for Security Operations
-- [ ] Day 76 — Python & boto3 Fundamentals
-- [ ] Day 77 — Security Automation with boto3
-- [ ] Day 78 — Terraform Fundamentals for AWS
-- [ ] Day 79 — Terraform Security Configuration
-- [ ] Day 80 — AWS Cloud Security Final Review
+- [ ] Day 39 — AWS CLI Fundamentals
+- [ ] Day 40 — AWS CLI for Security Operations
+- [ ] Day 41 — Python & boto3 Fundamentals
+- [ ] Day 42 — Security Automation with boto3
+- [ ] Day 43 — Terraform Fundamentals for AWS
+- [ ] Day 44 — Terraform Security Configuration
+- [ ] Day 45 — AWS Cloud Security Final Review
 
 ---
 
-# Day 36 — AWS Fundamentals & Cloud Security Overview
+# Day 1 — AWS Fundamentals & Cloud Security Overview
+
+> Overall Study Plan: Day 36
 
 ## Topic
 
@@ -146,16 +151,6 @@ An Availability Zone is one or more physically separated data centers within a R
 Example:
 
 ```text
-Tokyo Region
-│
-├── Availability Zone
-├── Availability Zone
-└── Availability Zone
-```
-
-The basic infrastructure hierarchy can be understood as:
-
-```text
 AWS
 └── Region
     └── Availability Zone
@@ -168,6 +163,8 @@ Using multiple Availability Zones improves:
 - Fault tolerance
 - Resilience
 - Disaster recovery capability
+
+Availability Zones are designed to be isolated from failures in other Availability Zones while still being connected through high-speed networking.
 
 ---
 
@@ -219,7 +216,7 @@ Examples include:
 
 ## 4. Responsibility Depends on the Service
 
-The customer's responsibility changes depending on the AWS service being used.
+The customer's level of responsibility changes depending on the AWS service being used.
 
 For example:
 
@@ -330,6 +327,8 @@ AWS Config
 ## 7. AWS Account as a Security Boundary
 
 An AWS account acts as an important security and resource boundary.
+
+A single AWS account can contain resources such as:
 
 ```text
 AWS Account
@@ -469,6 +468,8 @@ Macie
 
 ## 9. Example — EC2 Security Perspective
 
+Amazon EC2 can be evaluated using the same security model.
+
 ```text
 Amazon EC2
 │
@@ -579,7 +580,7 @@ I will use these perspectives when studying individual AWS services and architec
 
 ## Next Step
 
-Day 37 will focus on AWS Identity and Access Management (IAM).
+Day 2 will focus on AWS Identity and Access Management (IAM).
 
 Topics will include:
 
