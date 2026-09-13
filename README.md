@@ -40,7 +40,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 7 — Public & Private Subnets](notes/day07-public-private-subnets.md)
 - [x] [Day 8 — Route Tables & Internet Gateway](notes/day08-route-tables-internet-gateway.md)
 - [x] [Day 9 — NAT Gateway](notes/day09-nat-gateway.md)
-- [ ] Day 10 — Security Groups
+- [x] [Day 10 — Security Groups](notes/day10-security-groups.md)
 - [ ] Day 11 — Network ACLs
 - [ ] Day 12 — VPC Security Review
 
@@ -110,7 +110,8 @@ aws-cloud-security/
     ├── day06-vpc-fundamentals.md
     ├── day07-public-private-subnets.md
     ├── day08-route-tables-internet-gateway.md
-    └── day09-nat-gateway.md
+    ├── day09-nat-gateway.md
+    └── day10-security-groups.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -180,7 +181,7 @@ Phase 2 — AWS Networking
 ## Current Topic
 
 ```text
-Day 9 — NAT Gateway
+Day 10 — Security Groups
 ```
 
 ## Completed Topics
@@ -195,6 +196,7 @@ Day 9 — NAT Gateway
 - Public & Private Subnets
 - Route Tables & Internet Gateway
 - NAT Gateway
+- Security Groups
 
 ---
 
