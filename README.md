@@ -42,7 +42,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 9 — NAT Gateway](notes/day09-nat-gateway.md)
 - [x] [Day 10 — Security Groups](notes/day10-security-groups.md)
 - [x] [Day 11 — Network ACLs](notes/day11-network-acls.md)
-- [ ] Day 12 — VPC Security Review
+- [x] [Day 12 — VPC Security Review](notes/day12-vpc-security-review.md)
 
 ## Phase 3 — Compute & Storage Security
 
@@ -112,7 +112,8 @@ aws-cloud-security/
     ├── day08-route-tables-internet-gateway.md
     ├── day09-nat-gateway.md
     ├── day10-security-groups.md
-    └── day11-network-acls.md
+    ├── day11-network-acls.md
+    └── day12-vpc-security-review.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -182,7 +183,7 @@ Phase 2 — AWS Networking
 ## Current Topic
 
 ```text
-Day 11 — Network ACLs
+Day 12 — VPC Security Review
 ```
 
 ## Completed Topics
@@ -199,6 +200,7 @@ Day 11 — Network ACLs
 - NAT Gateway
 - Security Groups
 - Network ACLs
+- VPC Security Review
 
 ---
 
