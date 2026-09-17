@@ -48,7 +48,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 
 - [x] [Day 13 — EC2 Fundamentals & Security](notes/day13-ec2-fundamentals-security.md)
 - [x] [Day 14 — EC2 Security Hardening](notes/day14-ec2-security-hardening.md)
-- [ ] Day 15 — S3 Fundamentals
+- [x] [Day 15 — S3 Fundamentals](notes/day15-s3-fundamentals.md)
 - [ ] Day 16 — S3 Access Control & Security
 - [ ] Day 17 — EBS Encryption
 - [ ] Day 18 — RDS Security
@@ -115,7 +115,8 @@ aws-cloud-security/
     ├── day11-network-acls.md
     ├── day12-vpc-security-review.md
     ├── day13-ec2-fundamentals-security.md
-    └── day14-ec2-security-hardening.md
+    ├── day14-ec2-security-hardening.md
+    └── day15-s3-fundamentals.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -185,7 +186,7 @@ Phase 3 — Compute & Storage Security
 ## Current Topic
 
 ```text
-Day 14 — EC2 Security Hardening
+Day 15 — S3 Fundamentals
 ```
 
 ## Completed Topics
@@ -205,6 +206,7 @@ Day 14 — EC2 Security Hardening
 - VPC Security Review
 - EC2 Fundamentals & Security
 - EC2 Security Hardening
+- S3 Fundamentals
 
 ---
 
