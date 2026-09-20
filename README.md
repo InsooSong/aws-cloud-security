@@ -50,7 +50,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 14 — EC2 Security Hardening](notes/day14-ec2-security-hardening.md)
 - [x] [Day 15 — S3 Fundamentals](notes/day15-s3-fundamentals.md)
 - [x] [Day 16 — S3 Access Control & Security](notes/day16-s3-access-control-security.md)
-- [ ] Day 17 — EBS Encryption
+- [x] [Day 17 — EBS Encryption](notes/day17-ebs-encryption.md)
 - [ ] Day 18 — RDS Security
 - [ ] Day 19 — Compute & Storage Security Review
 
@@ -117,7 +117,8 @@ aws-cloud-security/
     ├── day13-ec2-fundamentals-security.md
     ├── day14-ec2-security-hardening.md
     ├── day15-s3-fundamentals.md
-    └── day16-s3-access-control-security.md
+    ├── day16-s3-access-control-security.md
+    └── day17-ebs-encryption.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -187,7 +188,7 @@ Phase 3 — Compute & Storage Security
 ## Current Topic
 
 ```text
-Day 16 — S3 Access Control & Security
+Day 17 — EBS Encryption
 ```
 
 ## Completed Topics
@@ -209,6 +210,7 @@ Day 16 — S3 Access Control & Security
 - EC2 Security Hardening
 - S3 Fundamentals
 - S3 Access Control & Security
+- EBS Encryption
 
 ---
 
