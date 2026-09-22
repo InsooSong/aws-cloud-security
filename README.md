@@ -52,7 +52,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 16 — S3 Access Control & Security](notes/day16-s3-access-control-security.md)
 - [x] [Day 17 — EBS Encryption](notes/day17-ebs-encryption.md)
 - [x] [Day 18 — RDS Security](notes/day18-rds-security.md)
-- [ ] Day 19 — Compute & Storage Security Review
+- [x] [Day 19 — Compute & Storage Security Review](notes/day19-compute-storage-security-review.md)
 
 ## Phase 4 — Logging & Monitoring
 
@@ -119,7 +119,8 @@ aws-cloud-security/
     ├── day15-s3-fundamentals.md
     ├── day16-s3-access-control-security.md
     ├── day17-ebs-encryption.md
-    └── day18-rds-security.md
+    ├── day18-rds-security.md
+    └── day19-compute-storage-security-review.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -189,7 +190,7 @@ Phase 3 — Compute & Storage Security
 ## Current Topic
 
 ```text
-Day 18 — RDS Security
+Day 19 — Compute & Storage Security Review
 ```
 
 ## Completed Topics
@@ -213,6 +214,7 @@ Day 18 — RDS Security
 - S3 Access Control & Security
 - EBS Encryption
 - RDS Security
+- Compute & Storage Security Review
 
 ---
 
