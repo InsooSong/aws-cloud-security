@@ -56,7 +56,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 
 ## Phase 4 — Logging & Monitoring
 
-- [ ] Day 20 — AWS CloudTrail
+- [x] [Day 20 — AWS CloudTrail](notes/day20-aws-cloudtrail.md)
 - [ ] Day 21 — Amazon CloudWatch
 - [ ] Day 22 — AWS Config
 - [ ] Day 23 — Centralized Logging
@@ -120,7 +120,8 @@ aws-cloud-security/
     ├── day16-s3-access-control-security.md
     ├── day17-ebs-encryption.md
     ├── day18-rds-security.md
-    └── day19-compute-storage-security-review.md
+    ├── day19-compute-storage-security-review.md
+    └── day20-aws-cloudtrail.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -184,13 +185,13 @@ These areas are used as a consistent framework when analyzing AWS services and a
 ## Current Phase
 
 ```text
-Phase 3 — Compute & Storage Security
+Phase 4 — Logging & Monitoring
 ```
 
 ## Current Topic
 
 ```text
-Day 19 — Compute & Storage Security Review
+Day 20 — AWS CloudTrail
 ```
 
 ## Completed Topics
@@ -215,6 +216,7 @@ Day 19 — Compute & Storage Security Review
 - EBS Encryption
 - RDS Security
 - Compute & Storage Security Review
+- AWS CloudTrail
 
 ---
 
