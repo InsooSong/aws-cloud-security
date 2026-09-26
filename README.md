@@ -59,7 +59,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 20 — AWS CloudTrail](notes/day20-aws-cloudtrail.md)
 - [x] [Day 21 — Amazon CloudWatch](notes/day21-amazon-cloudwatch.md)
 - [x] [Day 22 — AWS Config](notes/day22-aws-config.md)
-- [ ] Day 23 — Centralized Logging
+- [x] [Day 23 — Centralized Logging](notes/day23-centralized-logging.md)
 - [ ] Day 24 — Logging & Monitoring Review
 
 ## Phase 5 — Data Protection & Threat Detection
@@ -123,7 +123,8 @@ aws-cloud-security/
     ├── day19-compute-storage-security-review.md
     ├── day20-aws-cloudtrail.md
     ├── day21-amazon-cloudwatch.md
-    └── day22-aws-config.md
+    ├── day22-aws-config.md
+    └── day23-centralized-logging.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -193,7 +194,7 @@ Phase 4 — Logging & Monitoring
 ## Current Topic
 
 ```text
-Day 22 — AWS Config
+Day 23 — Centralized Logging
 ```
 
 ## Completed Topics
@@ -221,6 +222,7 @@ Day 22 — AWS Config
 - AWS CloudTrail
 - Amazon CloudWatch
 - AWS Config
+- Centralized Logging
 
 ---
 
