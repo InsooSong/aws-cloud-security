@@ -64,7 +64,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 
 ## Phase 5 — Data Protection & Threat Detection
 
-- [ ] Day 25 — AWS KMS Fundamentals
+- [x] [Day 25 — AWS KMS Fundamentals](notes/day25-aws-kms-fundamentals.md)
 - [ ] Day 26 — KMS Keys & Encryption
 - [ ] Day 27 — AWS Secrets Manager
 - [ ] Day 28 — Amazon GuardDuty
@@ -125,7 +125,8 @@ aws-cloud-security/
     ├── day21-amazon-cloudwatch.md
     ├── day22-aws-config.md
     ├── day23-centralized-logging.md
-    └── day24-logging-monitoring-review.md
+    ├── day24-logging-monitoring-review.md
+    └── day25-aws-kms-fundamentals.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -189,13 +190,13 @@ These areas are used as a consistent framework when analyzing AWS services and a
 ## Current Phase
 
 ```text
-Phase 4 — Logging & Monitoring
+Phase 5 — Data Protection & Threat Detection
 ```
 
 ## Current Topic
 
 ```text
-Day 24 — Logging & Monitoring Review
+Day 25 — AWS KMS Fundamentals
 ```
 
 ## Completed Topics
@@ -225,6 +226,7 @@ Day 24 — Logging & Monitoring Review
 - AWS Config
 - Centralized Logging
 - Logging & Monitoring Review
+- AWS KMS Fundamentals
 
 ---
 
