@@ -68,7 +68,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 26 — KMS Keys & Encryption](notes/day26-kms-keys-encryption.md)
 - [x] [Day 27 — AWS Secrets Manager](notes/day27-aws-secrets-manager.md)
 - [x] [Day 28 — Amazon GuardDuty](notes/day28-amazon-guardduty.md)
-- [ ] Day 29 — AWS Security Hub
+- [x] [Day 29 — AWS Security Hub](notes/day29-aws-security-hub.md)
 - [ ] Day 30 — Amazon Inspector
 - [ ] Day 31 — Amazon Macie
 - [ ] Day 32 — AWS WAF & Shield
@@ -129,7 +129,8 @@ aws-cloud-security/
     ├── day25-aws-kms-fundamentals.md
     ├── day26-kms-keys-encryption.md
     ├── day27-aws-secrets-manager.md
-    └── day28-amazon-guardduty.md
+    ├── day28-amazon-guardduty.md
+    └── day29-aws-security-hub.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -199,7 +200,7 @@ Phase 5 — Data Protection & Threat Detection
 ## Current Topic
 
 ```text
-Day 28 — Amazon GuardDuty
+Day 29 — AWS Security Hub
 ```
 
 ## Completed Topics
@@ -233,6 +234,7 @@ Day 28 — Amazon GuardDuty
 - KMS Keys & Encryption
 - AWS Secrets Manager
 - Amazon GuardDuty
+- AWS Security Hub
 
 ---
 
