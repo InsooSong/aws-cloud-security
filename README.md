@@ -70,7 +70,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 28 — Amazon GuardDuty](notes/day28-amazon-guardduty.md)
 - [x] [Day 29 — AWS Security Hub](notes/day29-aws-security-hub.md)
 - [x] [Day 30 — Amazon Inspector](notes/day30-amazon-inspector.md)
-- [ ] Day 31 — Amazon Macie
+- [x] [Day 31 — Amazon Macie](notes/day31-amazon-macie.md)
 - [ ] Day 32 — AWS WAF & Shield
 - [ ] Day 33 — Security Services Review
 
@@ -131,7 +131,8 @@ aws-cloud-security/
     ├── day27-aws-secrets-manager.md
     ├── day28-amazon-guardduty.md
     ├── day29-aws-security-hub.md
-    └── day30-amazon-inspector.md
+    ├── day30-amazon-inspector.md
+    └── day31-amazon-macie.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -201,7 +202,7 @@ Phase 5 — Data Protection & Threat Detection
 ## Current Topic
 
 ```text
-Day 30 — Amazon Inspector
+Day 31 — Amazon Macie
 ```
 
 ## Completed Topics
@@ -237,6 +238,7 @@ Day 30 — Amazon Inspector
 - Amazon GuardDuty
 - AWS Security Hub
 - Amazon Inspector
+- Amazon Macie
 
 ---
 
