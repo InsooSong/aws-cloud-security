@@ -78,7 +78,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 
 - [x] [Day 34 — AWS Organizations](notes/day34-aws-organizations.md)
 - [x] [Day 35 — Service Control Policies](notes/day35-service-control-policies.md)
-- [ ] Day 36 — Multi-Account Security Architecture
+- [x] [Day 36 — Multi-Account Security Architecture](notes/day36-multi-account-security-architecture.md)
 - [ ] Day 37 — Centralized Security & Logging
 - [ ] Day 38 — AWS Security Architecture Review
 
@@ -136,7 +136,8 @@ aws-cloud-security/
     ├── day32-aws-waf-shield.md
     ├── day33-security-services-review.md
     ├── day34-aws-organizations.md
-    └── day35-service-control-policies.md
+    ├── day35-service-control-policies.md
+    └── day36-multi-account-security-architecture.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -206,7 +207,7 @@ Phase 6 — AWS Security Architecture
 ## Current Topic
 
 ```text
-Day 35 — Service Control Policies
+Day 36 — Multi-Account Security Architecture
 ```
 
 ## Completed Topics
@@ -247,6 +248,7 @@ Day 35 — Service Control Policies
 - Security Services Review
 - AWS Organizations
 - Service Control Policies
+- Multi-Account Security Architecture
 
 ---
 
