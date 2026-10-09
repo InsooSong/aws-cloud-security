@@ -2108,7 +2108,7 @@ to a public repository.
  CloudTrail / Config         Security Tooling              Log Archive
  Flow / WAF / DNS               Account                      Account
         |                           |                           |
-        |                           +-- GuardDuty              |
+        |                           +-- GuardDuty               |
         |                           +-- Inspector               |
         |                           +-- Macie                   |
         |                           +-- Security Hub            |
