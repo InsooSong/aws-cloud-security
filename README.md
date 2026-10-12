@@ -84,7 +84,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 
 ## Phase 7 — Security Automation
 
-- [ ] Day 39 — AWS CLI Fundamentals
+- [x] [Day 39 — AWS CLI Fundamentals](notes/day39-aws-cli-fundamentals.md)
 - [ ] Day 40 — AWS CLI for Security Operations
 - [ ] Day 41 — Python & boto3 Fundamentals
 - [ ] Day 42 — Security Automation with boto3
@@ -139,7 +139,8 @@ aws-cloud-security/
     ├── day35-service-control-policies.md
     ├── day36-multi-account-security-architecture.md
     ├── day37-centralized-security-logging.md
-    └── day38-aws-security-architecture-review.md
+    ├── day38-aws-security-architecture-review.md
+    └── day39-aws-cli-fundamentals.md
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -203,13 +204,13 @@ These areas are used as a consistent framework when analyzing AWS services and a
 ## Current Phase
 
 ```text
-Phase 6 — AWS Security Architecture
+Phase 7 — Security Automation
 ```
 
 ## Current Topic
 
 ```text
-Day 38 — AWS Security Architecture Review
+Day 39 — AWS CLI Fundamentals
 ```
 
 ## Completed Topics
@@ -253,6 +254,7 @@ Day 38 — AWS Security Architecture Review
 - Multi-Account Security Architecture
 - Centralized Security & Logging
 - AWS Security Architecture Review
+- AWS CLI Fundamentals
 
 ---
 
