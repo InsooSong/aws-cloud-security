@@ -86,7 +86,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 
 - [x] [Day 39 — AWS CLI Fundamentals](notes/day39-aws-cli-fundamentals.md)
 - [x] [Day 40 — AWS CLI for Security Operations](notes/day40-aws-cli-security-operations.md)
-- [ ] Day 41 — Python & boto3 Fundamentals
+- [x] [Day 41 — Python & boto3 Fundamentals](notes/day41-python-boto3-fundamentals.md)
 - [ ] Day 42 — Security Automation with boto3
 - [ ] Day 43 — Terraform Fundamentals for AWS
 - [ ] Day 44 — Terraform Security Configuration
@@ -101,47 +101,56 @@ aws-cloud-security/
 │
 ├── README.md
 │
-└── notes/
-    ├── day01-aws-fundamentals.md
-    ├── day02-iam-fundamentals.md
-    ├── day03-iam-identities-policies.md
-    ├── day04-iam-policy-evaluation.md
-    ├── day05-iam-security-best-practices.md
-    ├── day06-vpc-fundamentals.md
-    ├── day07-public-private-subnets.md
-    ├── day08-route-tables-internet-gateway.md
-    ├── day09-nat-gateway.md
-    ├── day10-security-groups.md
-    ├── day11-network-acls.md
-    ├── day12-vpc-security-review.md
-    ├── day13-ec2-fundamentals-security.md
-    ├── day14-ec2-security-hardening.md
-    ├── day15-s3-fundamentals.md
-    ├── day16-s3-access-control-security.md
-    ├── day17-ebs-encryption.md
-    ├── day18-rds-security.md
-    ├── day19-compute-storage-security-review.md
-    ├── day20-aws-cloudtrail.md
-    ├── day21-amazon-cloudwatch.md
-    ├── day22-aws-config.md
-    ├── day23-centralized-logging.md
-    ├── day24-logging-monitoring-review.md
-    ├── day25-aws-kms-fundamentals.md
-    ├── day26-kms-keys-encryption.md
-    ├── day27-aws-secrets-manager.md
-    ├── day28-amazon-guardduty.md
-    ├── day29-aws-security-hub.md
-    ├── day30-amazon-inspector.md
-    ├── day31-amazon-macie.md
-    ├── day32-aws-waf-shield.md
-    ├── day33-security-services-review.md
-    ├── day34-aws-organizations.md
-    ├── day35-service-control-policies.md
-    ├── day36-multi-account-security-architecture.md
-    ├── day37-centralized-security-logging.md
-    ├── day38-aws-security-architecture-review.md
-    ├── day39-aws-cli-fundamentals.md
-    └── day40-aws-cli-security-operations.md
+├── .gitignore
+│
+├── notes/
+│   ├── day01-aws-fundamentals.md
+│   ├── day02-iam-fundamentals.md
+│   ├── day03-iam-identities-policies.md
+│   ├── day04-iam-policy-evaluation.md
+│   ├── day05-iam-security-best-practices.md
+│   ├── day06-vpc-fundamentals.md
+│   ├── day07-public-private-subnets.md
+│   ├── day08-route-tables-internet-gateway.md
+│   ├── day09-nat-gateway.md
+│   ├── day10-security-groups.md
+│   ├── day11-network-acls.md
+│   ├── day12-vpc-security-review.md
+│   ├── day13-ec2-fundamentals-security.md
+│   ├── day14-ec2-security-hardening.md
+│   ├── day15-s3-fundamentals.md
+│   ├── day16-s3-access-control-security.md
+│   ├── day17-ebs-encryption.md
+│   ├── day18-rds-security.md
+│   ├── day19-compute-storage-security-review.md
+│   ├── day20-aws-cloudtrail.md
+│   ├── day21-amazon-cloudwatch.md
+│   ├── day22-aws-config.md
+│   ├── day23-centralized-logging.md
+│   ├── day24-logging-monitoring-review.md
+│   ├── day25-aws-kms-fundamentals.md
+│   ├── day26-kms-keys-encryption.md
+│   ├── day27-aws-secrets-manager.md
+│   ├── day28-amazon-guardduty.md
+│   ├── day29-aws-security-hub.md
+│   ├── day30-amazon-inspector.md
+│   ├── day31-amazon-macie.md
+│   ├── day32-aws-waf-shield.md
+│   ├── day33-security-services-review.md
+│   ├── day34-aws-organizations.md
+│   ├── day35-service-control-policies.md
+│   ├── day36-multi-account-security-architecture.md
+│   ├── day37-centralized-security-logging.md
+│   ├── day38-aws-security-architecture-review.md
+│   ├── day39-aws-cli-fundamentals.md
+│   ├── day40-aws-cli-security-operations.md
+│   └── day41-python-boto3-fundamentals.md
+│
+└── scripts/
+    ├── check_identity.py
+    ├── list_ec2.py
+    ├── list_s3.py
+    └── list_roles.py
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -211,7 +220,7 @@ Phase 7 — Security Automation
 ## Current Topic
 
 ```text
-Day 40 — AWS CLI for Security Operations
+Day 41 — Python & boto3 Fundamentals
 ```
 
 ## Completed Topics
@@ -257,6 +266,7 @@ Day 40 — AWS CLI for Security Operations
 - AWS Security Architecture Review
 - AWS CLI Fundamentals
 - AWS CLI for Security Operations
+- Python & boto3 Fundamentals
 
 ---
 
