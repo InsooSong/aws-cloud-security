@@ -87,7 +87,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 39 — AWS CLI Fundamentals](notes/day39-aws-cli-fundamentals.md)
 - [x] [Day 40 — AWS CLI for Security Operations](notes/day40-aws-cli-security-operations.md)
 - [x] [Day 41 — Python & boto3 Fundamentals](notes/day41-python-boto3-fundamentals.md)
-- [ ] Day 42 — Security Automation with boto3
+- [x] [Day 42 — Security Automation with boto3](notes/day42-security-automation-boto3.md)
 - [ ] Day 43 — Terraform Fundamentals for AWS
 - [ ] Day 44 — Terraform Security Configuration
 - [ ] Day 45 — AWS Cloud Security Final Review
@@ -144,13 +144,15 @@ aws-cloud-security/
 │   ├── day38-aws-security-architecture-review.md
 │   ├── day39-aws-cli-fundamentals.md
 │   ├── day40-aws-cli-security-operations.md
-│   └── day41-python-boto3-fundamentals.md
+│   ├── day41-python-boto3-fundamentals.md
+│   └── day42-security-automation-boto3.md
 │
 └── scripts/
     ├── check_identity.py
     ├── list_ec2.py
     ├── list_s3.py
-    └── list_roles.py
+    ├── list_roles.py
+    └── security_scan.py
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -220,7 +222,7 @@ Phase 7 — Security Automation
 ## Current Topic
 
 ```text
-Day 41 — Python & boto3 Fundamentals
+Day 42 — Security Automation with boto3
 ```
 
 ## Completed Topics
@@ -267,6 +269,7 @@ Day 41 — Python & boto3 Fundamentals
 - AWS CLI Fundamentals
 - AWS CLI for Security Operations
 - Python & boto3 Fundamentals
+- Security Automation with boto3
 
 ---
 
