@@ -147,12 +147,15 @@ aws-cloud-security/
 │   ├── day41-python-boto3-fundamentals.md
 │   └── day42-security-automation-boto3.md
 │
-└── scripts/
-    ├── check_identity.py
-    ├── list_ec2.py
-    ├── list_s3.py
-    ├── list_roles.py
-    └── security_scan.py
+├── scripts/
+│   ├── check_identity.py
+│   ├── list_ec2.py
+│   ├── list_s3.py
+│   ├── list_roles.py
+│   └── security_scan.py
+│
+└── reports/
+    └── .gitkeep
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
