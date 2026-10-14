@@ -11,6 +11,9 @@ __pycache__/
 # AWS security outputs
 credential-report.csv
 
+# Generated security reports
+reports/*.json
+
 # Logs
 *.log
 
