@@ -89,7 +89,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 41 — Python & boto3 Fundamentals](notes/day41-python-boto3-fundamentals.md)
 - [x] [Day 42 — Security Automation with boto3](notes/day42-security-automation-boto3.md)
 - [x] [Day 43 — Terraform Fundamentals for AWS](notes/day43-terraform-fundamentals-aws.md)
-- [ ] Day 44 — Terraform Security Configuration
+- [x] [Day 44 — Terraform Security Configuration](notes/day44-terraform-security-configuration.md)
 - [ ] Day 45 — AWS Cloud Security Final Review
 
 ---
@@ -146,25 +146,38 @@ aws-cloud-security/
 │   ├── day40-aws-cli-security-operations.md
 │   ├── day41-python-boto3-fundamentals.md
 │   ├── day42-security-automation-boto3.md
-│   └── day43-terraform-fundamentals-aws.md
+│   ├── day43-terraform-fundamentals-aws.md
+│   └── day44-terraform-security-configuration.md
 │
 ├── scripts/
 │   ├── check_identity.py
 │   ├── list_ec2.py
-│   ├── list_s3.py
 │   ├── list_roles.py
+│   ├── list_s3.py
 │   └── security_scan.py
 │
 ├── reports/
 │   └── .gitkeep
 │
 └── terraform/
-    └── day43/
-        ├── versions.tf
+    ├── day43/
+    │   ├── main.tf
+    │   ├── outputs.tf
+    │   ├── provider.tf
+    │   ├── variables.tf
+    │   └── versions.tf
+    │
+    └── day44/
+        ├── checks.tf
+        ├── iam.tf
+        ├── kms.tf
+        ├── locals.tf
+        ├── network.tf
+        ├── outputs.tf
         ├── provider.tf
+        ├── s3.tf
         ├── variables.tf
-        ├── main.tf
-        └── outputs.tf
+        └── versions.tf
 ```
 
 Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
@@ -234,7 +247,7 @@ Phase 7 — Security Automation
 ## Current Topic
 
 ```text
-Day 43 — Terraform Fundamentals for AWS
+Day 44 — Terraform Security Configuration
 ```
 
 ## Completed Topics
@@ -283,6 +296,7 @@ Day 43 — Terraform Fundamentals for AWS
 - Python & boto3 Fundamentals
 - Security Automation with boto3
 - Terraform Fundamentals for AWS
+- Terraform Security Configuration
 
 ---
 
