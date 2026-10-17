@@ -1,26 +1,30 @@
 # AWS Cloud Security
 
-> Hands-on learning notes for AWS and Cloud Security.
+> Hands-on learning and security engineering practice for AWS Cloud Security.
 
-This repository documents my practical AWS learning journey with a focus on cloud security, identity and access management, networking, data protection, logging, monitoring, threat detection, and security automation.
+This repository documents my hands-on AWS Cloud Security study journey, covering identity and access management, networking, compute and storage security, data protection, logging, threat detection, multi-account governance, security automation, and Infrastructure as Code.
 
-The goal of this repository is to build practical cloud security knowledge through structured study, hands-on practice, security-focused analysis, and continuous documentation.
+The repository combines structured study notes with practical AWS CLI exercises, Python and boto3 security automation, and secure Terraform configurations.
 
 ---
 
-# Learning Objectives
+# What This Repository Demonstrates
 
-- Understand AWS core architecture and services
-- Build strong AWS networking fundamentals
-- Understand identity and access management
-- Apply the Principle of Least Privilege
-- Design secure AWS network architectures
-- Understand encryption and key management
-- Implement logging and monitoring
-- Learn AWS threat detection services
-- Understand multi-account security architecture
-- Practice cloud security automation
-- Develop practical skills for cloud security engineering
+- AWS core architecture and the Shared Responsibility Model
+- Identity and access management with least privilege
+- Secure VPC and network architecture
+- EC2, S3, EBS, and RDS security
+- Encryption and key management with AWS KMS
+- Secrets management
+- Logging, monitoring, and configuration tracking
+- Threat detection and vulnerability management
+- Multi-account security architecture and governance
+- Centralized security operations and logging
+- AWS CLI-based security investigation
+- Python and boto3 security automation
+- Infrastructure as Code with Terraform
+- Secure-by-default Terraform configuration
+- Preventive and detective cloud security controls
 
 ---
 
@@ -82,7 +86,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 37 — Centralized Security & Logging](notes/day37-centralized-security-logging.md)
 - [x] [Day 38 — AWS Security Architecture Review](notes/day38-aws-security-architecture-review.md)
 
-## Phase 7 — Security Automation
+## Phase 7 — Security Automation & Infrastructure as Code
 
 - [x] [Day 39 — AWS CLI Fundamentals](notes/day39-aws-cli-fundamentals.md)
 - [x] [Day 40 — AWS CLI for Security Operations](notes/day40-aws-cli-security-operations.md)
@@ -90,7 +94,7 @@ The goal of this repository is to build practical cloud security knowledge throu
 - [x] [Day 42 — Security Automation with boto3](notes/day42-security-automation-boto3.md)
 - [x] [Day 43 — Terraform Fundamentals for AWS](notes/day43-terraform-fundamentals-aws.md)
 - [x] [Day 44 — Terraform Security Configuration](notes/day44-terraform-security-configuration.md)
-- [ ] Day 45 — AWS Cloud Security Final Review
+- [x] [Day 45 — AWS Cloud Security Final Review](notes/day45-aws-cloud-security-final-review.md)
 
 ---
 
@@ -98,56 +102,11 @@ The goal of this repository is to build practical cloud security knowledge throu
 
 ```text
 aws-cloud-security/
-│
 ├── README.md
-│
 ├── .gitignore
 │
 ├── notes/
-│   ├── day01-aws-fundamentals.md
-│   ├── day02-iam-fundamentals.md
-│   ├── day03-iam-identities-policies.md
-│   ├── day04-iam-policy-evaluation.md
-│   ├── day05-iam-security-best-practices.md
-│   ├── day06-vpc-fundamentals.md
-│   ├── day07-public-private-subnets.md
-│   ├── day08-route-tables-internet-gateway.md
-│   ├── day09-nat-gateway.md
-│   ├── day10-security-groups.md
-│   ├── day11-network-acls.md
-│   ├── day12-vpc-security-review.md
-│   ├── day13-ec2-fundamentals-security.md
-│   ├── day14-ec2-security-hardening.md
-│   ├── day15-s3-fundamentals.md
-│   ├── day16-s3-access-control-security.md
-│   ├── day17-ebs-encryption.md
-│   ├── day18-rds-security.md
-│   ├── day19-compute-storage-security-review.md
-│   ├── day20-aws-cloudtrail.md
-│   ├── day21-amazon-cloudwatch.md
-│   ├── day22-aws-config.md
-│   ├── day23-centralized-logging.md
-│   ├── day24-logging-monitoring-review.md
-│   ├── day25-aws-kms-fundamentals.md
-│   ├── day26-kms-keys-encryption.md
-│   ├── day27-aws-secrets-manager.md
-│   ├── day28-amazon-guardduty.md
-│   ├── day29-aws-security-hub.md
-│   ├── day30-amazon-inspector.md
-│   ├── day31-amazon-macie.md
-│   ├── day32-aws-waf-shield.md
-│   ├── day33-security-services-review.md
-│   ├── day34-aws-organizations.md
-│   ├── day35-service-control-policies.md
-│   ├── day36-multi-account-security-architecture.md
-│   ├── day37-centralized-security-logging.md
-│   ├── day38-aws-security-architecture-review.md
-│   ├── day39-aws-cli-fundamentals.md
-│   ├── day40-aws-cli-security-operations.md
-│   ├── day41-python-boto3-fundamentals.md
-│   ├── day42-security-automation-boto3.md
-│   ├── day43-terraform-fundamentals-aws.md
-│   └── day44-terraform-security-configuration.md
+│   └── dayXX-*.md
 │
 ├── scripts/
 │   ├── check_identity.py
@@ -180,7 +139,13 @@ aws-cloud-security/
         └── versions.tf
 ```
 
-Each daily note contains detailed study material, examples, security considerations, hands-on practice, and reflections.
+The `notes/` directory contains the complete Day 1–45 study roadmap.
+
+The `scripts/` directory contains read-only AWS inventory and security automation examples built with Python and boto3.
+
+The `terraform/` directory contains Infrastructure as Code exercises, including secure AWS configuration examples.
+
+Generated security reports and Terraform state files are intentionally excluded from version control.
 
 ---
 
@@ -211,92 +176,137 @@ For security-related topics, I focus on questions such as:
 - What permissions are required?
 - Is the resource exposed to the Internet?
 - Is sensitive data encrypted?
+- Who can access the encryption keys?
 - Are activities logged?
+- Can configuration changes be tracked?
 - Can suspicious behavior be detected?
 - Can permissions or network access be reduced?
+- Can the security requirement be enforced through automation or Infrastructure as Code?
 
 ---
 
 # Security Focus Areas
 
-This repository focuses on the following cloud security areas:
-
 ```text
 Identity
 Network
+Compute & Storage
 Data Protection
 Logging
 Monitoring
 Threat Detection
 Governance
-Automation
+Security Automation
+Infrastructure as Code
 ```
 
-These areas are used as a consistent framework when analyzing AWS services and architectures.
+These areas provide a consistent framework for analyzing AWS services and cloud security architectures.
+
+---
+
+# Hands-on Security Automation
+
+The repository includes several Python and boto3 exercises for interacting with AWS APIs.
+
+Examples include:
+
+- Verifying the current AWS identity with STS
+- Enumerating EC2 instances
+- Enumerating IAM roles
+- Enumerating S3 buckets
+- Reviewing public EC2 exposure
+- Reviewing Security Group rules
+- Reviewing S3 security configuration
+- Retrieving GuardDuty and Inspector findings
+- Generating normalized security findings
+
+The automation examples are intentionally designed around **read-only operations first** to reduce the risk of unintended changes.
+
+---
+
+# Infrastructure as Code
+
+Terraform exercises demonstrate how cloud security controls can be implemented as preventive controls.
+
+Examples include:
+
+- VPC and private subnet configuration
+- Prevention of automatic public IP assignment
+- Least-privilege Security Groups
+- S3 Block Public Access
+- S3 SSE-KMS encryption
+- AWS KMS key management
+- IAM least-privilege policies
+- Terraform variable validation
+- Terraform security checks
+
+Terraform state and generated plan files are treated as sensitive and are excluded from version control.
+
+---
+
+# Security Model
+
+The repository approaches cloud security using three control categories:
+
+```text
+Prevent
+   ↓
+Detect
+   ↓
+Respond
+```
+
+Examples:
+
+```text
+Prevent
+├── IAM
+├── SCP
+├── Security Groups
+├── S3 Block Public Access
+├── KMS
+└── Terraform
+
+Detect
+├── CloudTrail
+├── AWS Config
+├── CloudWatch
+├── GuardDuty
+├── Inspector
+├── Macie
+└── Security Hub
+
+Respond
+├── AWS CLI Investigation
+├── boto3 Automation
+├── EventBridge
+├── Systems Manager
+└── Incident Response Processes
+```
 
 ---
 
 # Progress
 
-## Current Phase
+**Status:** Completed
+
+**Final Topic:** Day 45 — AWS Cloud Security Final Review
+
+The 45-day AWS Cloud Security study roadmap has been completed.
+
+The repository now combines:
 
 ```text
-Phase 7 — Security Automation
+AWS Fundamentals
+        +
+Cloud Security Architecture
+        +
+Security Operations
+        +
+Python / boto3 Automation
+        +
+Secure Infrastructure as Code
 ```
-
-## Current Topic
-
-```text
-Day 44 — Terraform Security Configuration
-```
-
-## Completed Topics
-
-- AWS Fundamentals
-- Shared Responsibility Model
-- IAM Fundamentals
-- IAM Users, Groups, Roles & Policies
-- IAM Policy Evaluation
-- IAM Security Best Practices
-- VPC Fundamentals
-- Public & Private Subnets
-- Route Tables & Internet Gateway
-- NAT Gateway
-- Security Groups
-- Network ACLs
-- VPC Security Review
-- EC2 Fundamentals & Security
-- EC2 Security Hardening
-- S3 Fundamentals
-- S3 Access Control & Security
-- EBS Encryption
-- RDS Security
-- Compute & Storage Security Review
-- AWS CloudTrail
-- Amazon CloudWatch
-- AWS Config
-- Centralized Logging
-- Logging & Monitoring Review
-- AWS KMS Fundamentals
-- KMS Keys & Encryption
-- AWS Secrets Manager
-- Amazon GuardDuty
-- AWS Security Hub
-- Amazon Inspector
-- Amazon Macie
-- AWS WAF & Shield
-- Security Services Review
-- AWS Organizations
-- Service Control Policies
-- Multi-Account Security Architecture
-- Centralized Security & Logging
-- AWS Security Architecture Review
-- AWS CLI Fundamentals
-- AWS CLI for Security Operations
-- Python & boto3 Fundamentals
-- Security Automation with boto3
-- Terraform Fundamentals for AWS
-- Terraform Security Configuration
 
 ---
 
